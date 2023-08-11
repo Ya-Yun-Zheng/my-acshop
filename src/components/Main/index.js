@@ -3,12 +3,12 @@ import "./Main.scss";
 import ProgressControl from "./ProgressControl";
 import RegisterContainer from "./RegisterContainer";
 
-function Main() {
+function Main(props) {
     return <main class="site-main">
         <div class="main-container">
-            <RegisterContainer />
+            <RegisterContainer step={props.step}/>
             <Cart />
-            <ProgressControl />
+            <ProgressControl setStep={props.setStep}/>
         </div>
     </main>
 }

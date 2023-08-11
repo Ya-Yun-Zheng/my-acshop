@@ -29,6 +29,7 @@ section.button-group {
             line-height: 20px;
             font-weight: 400;
             color: #000000;
+            cursor: pointer;
 
             > img {
                 margin-right: 12px;
@@ -42,6 +43,7 @@ section.button-group {
             background: var(--pink);
             color: #FFFFFF;
             margin-left: auto;
+            cursor: pointer;
 
             > img {
                 margin-left: 12px;

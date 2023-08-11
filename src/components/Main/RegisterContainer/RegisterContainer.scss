@@ -57,13 +57,8 @@ $phase-map: (1: 'address', 2: 'shipping', 3: 'credit-card');
     section.register-container[data-phase="#{$index}"] {
         // progress-bar
         .progress-bar {
-            &[data-order='1'] {
-                @if $index == 1 {
-                    border-color: var(--undone-progress-border);
-                }
-            }
             &[data-order='2'] {
-                @if $index < 3 {
+                @if $index < 2 {
                     border-color: var(--undone-progress-border);
                 }
             }
