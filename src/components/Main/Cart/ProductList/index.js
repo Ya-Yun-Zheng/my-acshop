@@ -1,17 +1,17 @@
 import Product from "../Product";
+import CartContext from "../../CartContext";
 
-function ProductList(props) {
-    return <section class="product-list col col-12" data-total-price="0">
-        {props.items.map((item, index) => 
-            <Product
-            key={item.id}
-            {...item}
-            setQuantity= {(quantity) => {
-                props.items[index].quantity = quantity;
-                props.setItems([...props.items]);
-            }} />
-        )}
-    </section>
+function ProductList() {
+    return <CartContext.Consumer>
+        {({ context }) => <section class="product-list col col-12" data-total-price="0">
+            {context.map((item, index) =>
+                <Product
+                    key={item.id}
+                    index={index}
+                />
+            )}
+        </section>}
+    </CartContext.Consumer>
 }
 
 export default ProductList;
