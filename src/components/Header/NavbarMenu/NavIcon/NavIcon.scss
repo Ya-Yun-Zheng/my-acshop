@@ -1,0 +1,11 @@
+@import "../../HeaderVariable.scss";
+
+.nav-icon {
+    width: 24px;
+    height: 24px;
+    
+    &:hover, &:active {
+        color: var(--secondary-text);
+        --main-text: var(--secondary-text);
+    }
+}

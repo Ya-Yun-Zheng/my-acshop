@@ -1,0 +1,33 @@
+@import "./HeaderVariable.scss";
+
+header.site-header {
+    position: sticky;
+    top: 0px;
+    padding-left: var(--site-edge-margin);
+    padding-right: var(--site-edge-margin);
+    background-color: var(--background-color);
+    text-align: center;
+    z-index: 100;
+
+    .header-container {
+        display: flex;
+        position: relative;
+        max-width: 1100px;
+        height: var(--header-height);
+        background-color: var(--background-color);
+        align-items: stretch;
+    }
+}
+
+@media screen and (max-width: $screen-break-point){
+    header.site-header {
+        label.burger-container {
+            display: flex;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            bottom: 0px;
+            align-items: center;
+        }
+    }
+}

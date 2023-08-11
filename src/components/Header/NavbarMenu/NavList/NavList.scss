@@ -1,0 +1,67 @@
+@import "../../HeaderVariable.scss";
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    background-color: inherit;
+
+    &.site-menu-list {
+        max-width: calc(50% - var(--header-logo-width) / 2 - #{$header-menu-item-margin-x} / 8);
+
+        .nav-item {
+            margin-left: $header-menu-item-margin-x;
+            margin-right: $header-menu-item-margin-x;
+
+            &:first-child {
+                margin-left: 0px;
+            }
+        }
+    }
+    &.site-action-list {
+        max-width: calc(50% - var(--header-logo-width) / 2 - #{$header-action-item-margin-x} / 8);
+
+        .nav-item {
+            margin-left: $header-action-item-margin-x;
+            margin-right: $header-action-item-margin-x;
+
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $screen-break-point){
+    .nav-list {
+        justify-content: center;
+
+        &.site-menu-list {
+            max-width: unset;
+            flex-direction: column;
+
+            .nav-item {
+                margin: 0px;
+
+                &::after {
+                    position: absolute;
+                    left: 15px;
+                    right: 15px;
+                    bottom: 0px;
+                    border-bottom: 1px solid rgba(42, 42, 42, 0.1);
+                    content: "";
+                }
+
+                &:first-child {
+                    padding-top: 0px;
+                }
+                &:nth-child(4) {
+                    order: 1;
+                }
+            }
+        }
+        &.site-action-list {
+            max-width: unset;
+        }
+    }
+}

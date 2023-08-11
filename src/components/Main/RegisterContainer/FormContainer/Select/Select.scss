@@ -1,0 +1,45 @@
+.select-container {
+    position: relative;
+    &::after {
+        position: absolute;
+        top: 50%;
+        right: 12px;
+        transform: translateY(-50%);
+        z-index: -2;
+        pointer-events: none;
+        border-style: solid;
+        border-width: 6px 5px 0 5px;
+        border-color: var(--select-arrow) transparent transparent transparent;
+        content: "";
+    }
+}
+
+select {
+    width: 100%;
+    padding: 12px 16px;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: 'Noto Sans TC', sans-serif;
+    line-height: 16px;
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+select {
+    color: var(--select-true);
+    background-color: transparent;
+
+    &:required:invalid {
+        color: var(--select-false);
+    }
+    cursor: pointer;
+    -webkit-appearance: none;
+
+    option {
+        &[value=""][disabled] {
+            display: none;
+        }
+        color: var(--select-true);
+    }
+}

@@ -1,0 +1,19 @@
+@import "../../HeaderVariable.scss";
+
+.nav-link {
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--main-text);
+    text-decoration: none;
+
+    &:hover, &:active {
+        color: var(--secondary-text);
+        --main-text: var(--secondary-text);
+    }
+}
+
+@media screen and (max-width: $screen-break-point) {
+    .nav-link {
+        display: block;
+    }
+}

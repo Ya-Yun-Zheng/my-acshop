@@ -1,0 +1,16 @@
+section.progress-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 48px;
+
+    .progress-bar {
+        display: flex;
+        flex-grow: 1;
+        max-width: 60px;
+        height: 1px;
+        margin: 0px 8px;
+        border-width: 2px;
+        border-style: solid;
+    }
+}

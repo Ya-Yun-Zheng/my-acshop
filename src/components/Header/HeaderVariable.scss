@@ -1,0 +1,17 @@
+@import 'src/_variables.scss';
+
+$header-menu-item-margin-x: 16px;
+$header-action-item-margin-x: 15px;
+
+
+:root {
+    --header-height: 60px;
+    --header-logo-width: 170px;
+}
+
+@media screen and (max-width: $screen-break-point){
+    :root {
+        --header-height: 56px;
+        --header-logo-width: 136px;
+    }
+}
