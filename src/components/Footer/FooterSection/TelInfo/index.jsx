@@ -1,7 +1,7 @@
 import "./TelInfo.scss";
 
 function TelInfo(props) {
-    return <div class="tel-info">{props.children}</div>
+    return <div className="tel-info">{props.children}</div>
 }
 
 export default TelInfo;

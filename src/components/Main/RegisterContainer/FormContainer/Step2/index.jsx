@@ -1,15 +1,16 @@
 import Radio from "../Radio";
 
 function Step2() {
-    return <form class="col col-12" data-phase="shipping">
-        <h3 class="form-title">運送方式</h3>
-        <section class="form-body col col-12">
+    return <form className="col col-12" data-phase="shipping">
+        <h3 className="form-title">運送方式</h3>
+        <section className="form-body col col-12">
             <Radio
                 inputId="shipping-standard"
                 name="shipping"
                 text="標準運送"
                 price="免費"
                 period="約 3~7 個工作天"
+                checked={true}
             />
             <Radio
                 inputId="shipping-dhl"

@@ -15,7 +15,7 @@ function ProgressControl(props) {
                 });
             }
 
-            return <section class="progress-control-container col col-lg-6 col-sm-12">
+            return <section className="progress-control-container col col-lg-6 col-sm-12">
                 <ButtonGroup dataPhase="address">
                     <NextButton onClick={() => props.setStep(2)} />
                 </ButtonGroup>

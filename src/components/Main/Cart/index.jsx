@@ -1,14 +1,13 @@
 import "./Cart.scss";
 import CartInfo from "./CartInfo";
 import ProductList from "./ProductList";
-import { useState } from "react";
 import CartContext from "../CartContext";
 
 function Cart() {
     return <CartContext.Consumer>
         {({ context }) => {
-            return <section class="cart-container col col-lg-5 col-sm-12">
-                <h3 class="cart-title">購物籃</h3>
+            return <section className="cart-container col col-lg-5 col-sm-12">
+                <h3 className="cart-title">購物籃</h3>
                 <ProductList />
                 <CartInfo className="shipping" text="運費" price="免費" />
                 <CartInfo

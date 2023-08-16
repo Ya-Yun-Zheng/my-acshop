@@ -4,7 +4,7 @@ import Step2 from "./Step2";
 import Step3 from "./Step3";
 
 function FormContainer() {
-    return <section class="form-container col col-12">
+    return <section className="form-container col col-12">
         <Step1 />
         <Step2 />
         <Step3 />

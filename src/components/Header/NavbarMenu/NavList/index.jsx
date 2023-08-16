@@ -4,7 +4,7 @@ import "./NavList.scss";
 function NavList(props) {
     return <ul className={`nav-list ${props.className}`}>
         {props.children.map(
-            (child) => <NavItem>{child}</NavItem>
+            (child, index) => <NavItem key={index}>{child}</NavItem>
         )}
     </ul>
 }

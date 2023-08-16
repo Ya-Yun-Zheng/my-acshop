@@ -1,16 +1,16 @@
 import "./Radio.scss";
 
 function Radio(props) {
-    return <label class="radio-group col col-12" data-price="0">
-        <input id={props.inputId} type="radio" name={props.name} checked />
-        <div class="radio-info">
-            <div class="col col-12">
-                <div class="text">{props.text}</div>
-                <div class="price">{props.price}</div>
+    return <label className="radio-group col col-12" data-price="0">
+        <input id={props.inputId} type="radio" name={props.name} defaultChecked={props.checked} />
+        <div className="radio-info">
+            <div className="col col-12">
+                <div className="text">{props.text}</div>
+                <div className="price">{props.price}</div>
             </div>
-            <div class="period col col-12">{props.period}</div>
+            <div className="period col col-12">{props.period}</div>
         </div>
-        <div class="radio-box-border"></div>
+        <div className="radio-box-border"></div>
     </label>
 }
 

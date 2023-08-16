@@ -1,6 +1,6 @@
 function PrevButton(props) {
-    return <button class="prev" onClick={props.onClick}>
-        <img src="/icons/left-arrow.svg" class="cursor-point" alt=""/>
+    return <button className="prev" onClick={props.onClick}>
+        <img src="/icons/left-arrow.svg" className="cursor-point" alt=""/>
         上一步
     </button>
 }

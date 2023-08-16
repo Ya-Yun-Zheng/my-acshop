@@ -7,8 +7,8 @@ import TelInfo from "./FooterSection/TelInfo";
 
 function Footer() {
     return (
-        <footer class="site-footer">
-            <div class="footer-container">
+        <footer className="site-footer">
+            <div className="footer-container">
                 <FooterSection>
                     <LogoContainer />
                 </FooterSection>

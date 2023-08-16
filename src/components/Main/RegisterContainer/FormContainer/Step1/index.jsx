@@ -2,10 +2,10 @@ import Input from "../Input";
 import Select from "../Select";
 
 function Step1() {
-    return <form class="col col-12" data-phase="address">
-        <h3 class="form-title">寄送地址</h3>
-        <section class="form-body col col-12">
-            <div class="col col-12">
+    return <form className="col col-12" data-phase="address">
+        <h3 className="form-title">寄送地址</h3>
+        <section className="form-body col col-12">
+            <div className="col col-12">
                 <Select
                     groupClass="input-w-lg-2 input-w-sm-s1"
                     label="稱謂"
@@ -21,7 +21,7 @@ function Step1() {
                     placeholder="請輸入姓名"
                 />
             </div>
-            <div class="col col-12">
+            <div className="col col-12">
                 <Input
                     groupClass="input-w-lg-3 input-w-sm-full"
                     label="電話"
@@ -33,7 +33,7 @@ function Step1() {
                     placeholder="請輸入電子郵件"
                 />
             </div>
-            <div class="col col-12">
+            <div className="col col-12">
                 <Select
                     groupClass="input-w-lg-2 input-w-sm-full"
                     label="縣市"

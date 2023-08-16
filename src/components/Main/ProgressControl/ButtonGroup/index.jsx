@@ -1,5 +1,5 @@
 function ButtonGroup(props) {
-    return <section class="button-group col col-12" data-phase={props.dataPhase}>
+    return <section className="button-group col col-12" data-phase={props.dataPhase}>
         {props.children}
     </section>
 }

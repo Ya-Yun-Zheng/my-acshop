@@ -15,8 +15,8 @@ function Main(props) {
     });
 
     return <CartContext.Provider value={{ context, setContext, register, setRegister }}>
-        <main class="site-main">
-            <div class="main-container">
+        <main className="site-main">
+            <div className="main-container">
                 <RegisterContainer step={props.step} />
                 <Cart />
                 <ProgressControl setStep={props.setStep} />

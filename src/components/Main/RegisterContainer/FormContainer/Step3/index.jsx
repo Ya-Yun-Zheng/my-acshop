@@ -11,10 +11,10 @@ function Step3() {
                 }
             }
 
-            return <form class="col col-12" data-phase="credit-card">
-                <h3 class="form-title">付款資訊</h3>
-                <section class="form-body col col-12">
-                    <div class="col col-12">
+            return <form className="col col-12" data-phase="credit-card">
+                <h3 className="form-title">付款資訊</h3>
+                <section className="form-body col col-12">
+                    <div className="col col-12">
                         <Input
                             groupClass="input-w-lg-4 input-w-sm-full"
                             label="持卡人姓名"
@@ -23,7 +23,7 @@ function Step3() {
                             onChange={onChange(event => register.cardName = event.target.value)}
                         />
                     </div>
-                    <div class="col col-12">
+                    <div className="col col-12">
                         <Input
                             groupClass="input-w-lg-4 input-w-sm-full"
                             label="卡號"
@@ -32,7 +32,7 @@ function Step3() {
                             onChange={onChange(event => register.cardNumber = event.target.value)}
                         />
                     </div>
-                    <div class="col col-12">
+                    <div className="col col-12">
                         <Input
                             groupClass="input-w-lg-3 input-w-sm-s3"
                             label="有效期限"
